@@ -286,7 +286,7 @@ a {
 	transition: transform var(--slow-anim);
 }
 
-.backdrop.is-hidden .modal-wrapper{
+.backdrop .is-hidden .modal-wrapper{
 	transform: translate( -50%, -50%) scale(.4);
 }
 
@@ -303,8 +303,11 @@ a {
 	right: 8px;
 	background-color: #fff;
 	border-radius: 50%;
-	border: 1px solid rgba(0, 0, 0, 0.10);
-	transition: fill var(--slow-anim), outline fill var(--slow-anim);
+	border: 1px solid rgba(0, 0, 0, 0.10);	
+}
+
+.modal-btn__icon{
+	transition: fill var(--slow-anim)
 }
 
 .modal-btn:hover{
@@ -350,7 +353,8 @@ input[name^="user"]{
 	position: relative;
 }
 
-.modal-form__name, .modal-form__email,.modal-form__tel, .modal-form__comment{
+
+span[data-title]{
 	font-size: 12px;
 	margin-bottom: 4px;
 }
@@ -365,7 +369,7 @@ input[name^="user"]{
 	left: 0;
 }
 
-.form-icon{
+.modal-form__icon{
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
@@ -464,17 +468,14 @@ input[name^="user"]:hover, .modal-form__comment--user:hover,.modal-form__comment
 	outline: transparent;
 }
 
-.modal-form__comment--user{
-	transition: border var(--slow-anim);
-}
-
-input[name^="user"]:hover~.form-icon, input[name^="user"]:focus~.form-icon{
+input[name^="user"]:hover~.modal-form__icon, input[name^="user"]:focus~.form-icon{
 	fill: var(--active-color);
 }
 
 .modal-form__comment--user{
 	padding-top: 12px;
 	padding-left: 16px;
+	transition: border var(--slow-anim);
 }
 
 .modal-form__comment--user::placeholder{

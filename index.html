@@ -63,36 +63,36 @@
 				<div class="backdrop is-hidden" data-modal>
 					<div class="modal-wrapper">
 						<button class="modal-btn" data-modal-close>
-							<svg class="icon-close" viewBox="0 0 100 100" width="18">
+							<svg class="modal-btn__icon" viewBox="0 0 100 100" width="18">
 								<use href="./images/icons/icons.svg#icon-close"></use>
 							</svg>
 						</button>
 						<div class="modal">
 							<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-							<form class="modal-form" name="inputs" >
+							<form class="modal-form" name="modal-form" >
 								<label class="modal-form__group">
-									<span class="modal-form__name">Ім'я</span>
+									<span class="modal-form__name" data-title>Ім'я</span>
 									<input class="modal-form__name--user" type="text" name="user-name" id="user-name">
-									<svg class="form-icon" viewBox="0 0 100 100" width="18">
+									<svg class="modal-form__icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-person"></use>
 									</svg>
 								</label>
 								<label class="modal-form__group">
-									<span class="modal-form__tel">Телефон</span>
+									<span class="modal-form__tel" data-title>Телефон</span>
 									<input class="modal-form__tel--user" type="tel" name="user-tel" id="user-tel">
-									<svg class="form-icon" viewBox="0 0 100 100" width="18">
+									<svg class="modal-form__icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-phone"></use>
 									</svg>
 								</label>
 								<label class="modal-form__group">
-									<span class="modal-form__email">Пошта</span>
+									<span class="modal-form__email" data-title>Пошта</span>
 									<input class="modal-form__email--user" type="email" name="user-email" id="user-email">
-									<svg class="form-icon" viewBox="0 0 100 100" width="18">
+									<svg class="modal-form__icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-email"></use>
 									</svg>
 								</label>
 								<label class="modal-form__group">
-									<span class="modal-form__comment">Коментар</span>
+									<span class="modal-form__comment" data-title>Коментар</span>
 									<textarea class="modal-form__comment--user" name="user-comment" id="user-comment" placeholder="Введіть текст" cols="30" rows="10" style="resize: none;"></textarea>							
 								</label>
 								<label class="modal-form__policy-group">
