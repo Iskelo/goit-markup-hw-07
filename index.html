@@ -67,42 +67,42 @@
 								<use href="./images/icons/icons.svg#icon-close"></use>
 							</svg>
 						</button>
-						<div class="modal-form">
+						<div class="modal">
 							<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-							<form class="inputs" name="inputs" >
-								<label class="form-label">
+							<form class="modal-form" name="inputs" >
+								<label class="modal-form__group">
 									<span class="label-name">Ім'я</span>
 									<input class="user-name" type="text" name="user-name" id="user-name">
 									<svg class="form-icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-person"></use>
 									</svg>
 								</label>
-								<label class="form-label">
+								<label class="modal-form__group">
 									<span class="label-tel">Телефон</span>
 									<input class="user-tel" type="tel" name="user-tel" id="user-tel">
 									<svg class="form-icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-phone"></use>
 									</svg>
 								</label>
-								<label class="form-label">
+								<label class="modal-form__group">
 									<span class="label-email">Пошта</span>
 									<input class="user-email" type="email" name="user-email" id="user-email">
 									<svg class="form-icon" viewBox="0 0 100 100" width="18">
 										<use href="./images/icons/icons.svg#icon-email"></use>
 									</svg>
 								</label>
-								<label class="form-label">
+								<label class="modal-form__group">
 									<span class="label-comment">Коментар</span>
 									<textarea class="user-comment" name="user-comment" id="user-comment" placeholder="Введіть текст" cols="30" rows="10" style="resize: none;"></textarea>							
 								</label>
-								<label class="checkbox">
-									<input class="user-checkbox visually-hidden" type="checkbox" name="user-checkbox" id="user-checkbox">
-									<span class="custom-chackbox">
-										<svg class="custom-chackbox-icon" width="14">
+								<label class="modal-form__policy-group">
+									<input class="modal-form__checkbox visually-hidden" type="checkbox" name="user-checkbox" id="user-checkbox">
+									<span class="modal-form__custom-chackbox">
+										<svg class="modal-form__custom-chackbox__icon" width="14">
 											<use href="./images/icons/icons.svg#icon-check"></use>
 										</svg>
 									</span>
-									<span class="agreement">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+									<span class="modal-form__policy-desc">Погоджуюся з розсилкою та приймаю <a class="modal-form__policy-link" href="">Умови договору</a></span>
 								</label>
 								<button class="form-btn" type="submit">Відправити</button>
 							</form>

@@ -321,7 +321,7 @@ a {
 	|=============================
 */
 
-.inputs{
+.modal-form{
 	text-align: left;
 }
 
@@ -342,7 +342,7 @@ a {
 	border: 1px solid var(--icons);
 }
 
-.form-label {
+.modal-form__group {
 	margin-top: 12px;
 	display: flex;
 	flex-direction: column;
@@ -354,7 +354,7 @@ a {
 	margin-bottom: 4px;
 }
 
-.form-label .user-comment{
+.user-comment{
 	border-radius: 4px;
 	border: 1px solid var(--icons);
 	margin-bottom: 20px;
@@ -372,7 +372,7 @@ a {
 	transition: fill var(--slow-anim);
 }
 
-.checkbox{
+.modal-form__policy-group{
 	display: flex;
 	align-items: center;
 	padding-left: 10px;	
@@ -380,12 +380,12 @@ a {
 	margin-bottom: 30px;
 }
 
-.agreement {
+.modal-form__policy-desc {
 	font-size: 14px;
 	line-height: 1.344;	
 }
 
-.agreement a{
+.modal-form__policy-link{
 	text-decoration: underline;
 	color: var(--active-color);
 }
@@ -404,7 +404,7 @@ a {
 	overflow: hidden;
  }
 
-.custom-chackbox {
+.modal-form__custom-chackbox {
 	display: flex;
 	width: 16px;
 	height: 15px;	
@@ -416,22 +416,22 @@ a {
 	transition: background-color var(--slow-anim), outline var(--slow-anim);
 }
 
-.custom-chackbox-icon {
+.modal-form__custom-chackbox__icon {
 	fill: #fff;
 	opacity: 0;
 	transition: opacity var(--slow-anim);
 }
 
-.user-checkbox:checked + .custom-chackbox{
+.modal-form__checkbox:checked + .modal-form__custom-chackbox{
 	background-color: var(--active-color);
 	outline: 2px solid var(--active-color);
 }
 
-.user-checkbox:checked + .custom-chackbox .custom-chackbox-icon {
+.modal-form__checkbox:checked + .modal-form__custom-chackbox .modal-form__custom-chackbox__icon {
 	opacity: 1;
 }
 
-.user-checkbox:hover + .custom-chackbox, .user-checkbox:focus + .custom-chackbox{
+.modal-form__checkbox:hover + .modal-form__custom-chackbox, .modal-form__checkbox:focus + .modal-form__custom-chackbox{
 	outline: 2px solid var(--active-color);
 }
 
