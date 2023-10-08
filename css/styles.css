@@ -93,7 +93,7 @@ p {
 	font-size: 26px;
 }
 
-.logo .logo-header {
+.logo__header {
 	color: #000;
 }
 
@@ -101,25 +101,22 @@ a {
 	color: var(--title-color);
 }
 
-.list {
+.navigation__list {
+	display: flex;
 	margin: 0;
 	padding: 0;
-}
-
-.menu {
-	display: flex;
 	align-items: center;
 }
 
-.menu-list {
+.navigation__item {
 	margin-right: 50px;
 }
 
-.menu-list:last-child {
+.navigation__item:last-child {
 	margin-right: 0;
 }
 
-.menu .menu-item {
+.navigation__link{
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -128,12 +125,12 @@ a {
 	transition: color var(--slow-anim);
 }
 
-.active {
+.navigation__link--active {
 	position: relative;	
 	color: var(--active-color);
 }
 
-.active::after{
+.navigation__link--active::after{
 	position: absolute;
 	display: block;
 	left: 0;
@@ -145,25 +142,41 @@ a {
 	border-radius: 2px;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.navigation__link:hover,
+.navigation__link:focus {
 	color: var(--active-color);
 }
 
-.contacts {
+.header__contact {
 	display: flex;
 	margin-left: auto;
 }
 
-.contact-list {
+.header__phone {
 	margin-right: 40px;	
 }
 
-.contact-list:last-child {
+.header__phone:last-child {
 	margin-right: 0;
 }
 
-.contact-list a {
+.header__email {
+	margin-right: 40px;	
+}
+
+.header__email:last-child {
+	margin-right: 0;
+}
+
+.header__email--link {
+	transition: color var(--slow-anim);
+	display: flex;
+	align-items: center;
+	color: currentColor;
+	font-weight: 500;
+	font-size: 14px;
+}
+.header__phone--link {
 	transition: color var(--slow-anim);
 	display: flex;
 	align-items: center;
@@ -172,13 +185,19 @@ a {
 	font-size: 14px;
 }
 
-.contact-list a:hover,
-.contact-list a:focus {
+.header__email--link:hover,
+.header__email--link:focus,
+.header__phone--link:hover,
+.header__phone--link:focus {
 	color: var(--active-color);
 	fill: var(--active-color);
 }
 
-.icon-contact{
+.phone__icon{
+	fill: currentColor;
+	margin-right: 10px;
+}
+.email__icon{
 	fill: currentColor;
 	margin-right: 10px;
 }
