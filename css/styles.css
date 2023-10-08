@@ -332,7 +332,7 @@ a {
 	font-size: 20px;
 }
 
-.user-name, .user-tel, .user-email {
+input[name^="user"]{
 	display: block;
 	width: 100%;
 	margin:0 auto;
@@ -340,6 +340,7 @@ a {
 	padding-left: 42px;
 	border-radius: 4px;
 	border: 1px solid var(--icons);
+	transition: border var(--slow-anim);
 }
 
 .modal-form__group {
@@ -349,18 +350,18 @@ a {
 	position: relative;
 }
 
-.label-name, .label-email,.label-tel, .label-comment{
+.modal-form__name, .modal-form__email,.modal-form__tel, .modal-form__comment{
 	font-size: 12px;
 	margin-bottom: 4px;
 }
 
-.user-comment{
+.modal-form__comment--user{
 	border-radius: 4px;
 	border: 1px solid var(--icons);
 	margin-bottom: 20px;
 	height: 120px;
 }
-.label-name {	
+.modal-form__name {	
 	left: 0;
 }
 
@@ -458,15 +459,12 @@ a {
 	background-color: var(--active-btn);
 }
 
-input[name^="user"]:hover, .user-comment:hover,.user-comment:focus, input[name^="user"]:focus{
+input[name^="user"]:hover, .modal-form__comment--user:hover,.modal-form__comment--user:focus, input[name^="user"]:focus{
 	border: 1px solid var(--active-color);
 	outline: transparent;
 }
-input[name^="user"]{
-	transition: border var(--slow-anim);
-}
 
-.user-comment{
+.modal-form__comment--user{
 	transition: border var(--slow-anim);
 }
 
@@ -474,12 +472,12 @@ input[name^="user"]:hover~.form-icon, input[name^="user"]:focus~.form-icon{
 	fill: var(--active-color);
 }
 
-.user-comment{
+.modal-form__comment--user{
 	padding-top: 12px;
 	padding-left: 16px;
 }
 
-.user-comment::placeholder{
+.modal-form__comment--user::placeholder{
 	color: rgba(117, 117, 117, 0.50);
 }
 
