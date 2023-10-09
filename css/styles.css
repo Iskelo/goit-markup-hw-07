@@ -259,6 +259,7 @@
 	margin: 0 auto;
 	color: var(--title-color);
 	font-size: 20px;
+	letter-spacing: 0.6px;
 }
 
 input[name^="user"]{
@@ -283,6 +284,7 @@ input[name^="user"]{
 span[data-title]{
 	font-size: 12px;
 	margin-bottom: 4px;
+	letter-spacing: 0.12px;
 }
 
 .modal-form__comment--user{
