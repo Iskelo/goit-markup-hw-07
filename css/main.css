@@ -579,6 +579,65 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 
 /* 
 	|=============================
+	| PARTNERS
+	|=============================
+*/
+.partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.partners-title {
+  font-size: 36px;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.partners-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  --items: 6;
+}
+
+.partners-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partners-logo {
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--icons);
+  border-radius: 4px;
+  fill: var(--icons);
+  -webkit-transition: fill var(--slow-anim), border var(--slow-anim);
+  transition: fill var(--slow-anim), border var(--slow-anim);
+}
+.partners-logo:hover, .partners-logo:focus {
+  fill: var(--active-color);
+  border: 1px solid var(--active-color);
+}
+
+/* 
+	|=============================
 	| ABOUT
 	|=============================
 */
@@ -716,6 +775,149 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 }
 
 .logo-footer {
+  color: #fff;
+}
+
+/* 
+	|=============================
+	| PORTFOLIO
+	|=============================
+*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* 
+	|=============================
+	| FILTER CARDS
+	|=============================
+*/
+.cards {
+  --items: 3;
+  margin-top: 50px;
+}
+
+.card-title {
+  margin-bottom: 4px;
+  color: var(--title-color);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.card-item {
+  display: block;
+  -webkit-transition: -webkit-box-shadow var(--slow-anim);
+  transition: -webkit-box-shadow var(--slow-anim);
+  transition: box-shadow var(--slow-anim);
+  transition: box-shadow var(--slow-anim), -webkit-box-shadow var(--slow-anim);
+}
+.card-item:hover, .card-item:focus {
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-text {
+  color: var(--subtitle-color);
+  letter-spacing: 0.03em;
+  line-height: 1.875;
+}
+
+.content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.card-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.card-description {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 294px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-transition: var(--slow-anim);
+  transition: var(--slow-anim);
+}
+.card:hover .card-description, .card:focus .card-description {
+  bottom: 0;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.desc-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+/* 
+	|=============================
+	| FILTER BUTTON
+	|=============================
+*/
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  margin-right: 8px;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn button {
+  padding: 6px 22px;
+  background-color: var(--background-team);
+  color: var(--title-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  -webkit-transition: background-color var(--slow-anim), color var(--slow-anim), -webkit-box-shadow var(--slow-anim);
+  transition: background-color var(--slow-anim), color var(--slow-anim), -webkit-box-shadow var(--slow-anim);
+  transition: background-color var(--slow-anim), color var(--slow-anim), box-shadow var(--slow-anim);
+  transition: background-color var(--slow-anim), color var(--slow-anim), box-shadow var(--slow-anim), -webkit-box-shadow var(--slow-anim);
+}
+.btn button:hover, .btn button:focus {
+  background-color: var(--active-color);
+  color: #fff;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn-active button {
+  background-color: var(--active-color);
   color: #fff;
 }
 
