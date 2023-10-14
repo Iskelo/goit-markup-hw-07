@@ -586,7 +586,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   padding-bottom: 94px;
 }
 
-.about-title {
+.about--title {
   margin-bottom: 50px;
   color: var(--title-color);
   text-align: center;
@@ -595,12 +595,11 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   letter-spacing: 0.03em;
 }
 
-.about-item {
+.about__list--item {
   position: relative;
   --items: 3;
 }
-
-.about-subtitle {
+.about__list--item--subtitle {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,20 +640,18 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   text-align: center;
 }
 
-.team-item {
+.team__list--item {
   background-color: #fff;
   --items: 4;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team-content {
+.team__list--item .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-.team-item-title {
+.team__list--item .team-item-title {
   margin-bottom: 10px;
   color: var(--title-color);
   text-align: center;
@@ -662,8 +659,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   font-weight: 500;
   letter-spacing: 0.03em;
 }
-
-.team-item-text {
+.team__list--item .team-item-text {
   text-align: center;
   letter-spacing: 0.03em;
 }
