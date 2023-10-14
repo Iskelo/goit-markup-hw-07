@@ -93,6 +93,19 @@ p {
   margin-right: auto;
 }
 
+.header {
+  border-bottom: 1px solid var(--border-color);
+  letter-spacing: 0.02em;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,4 +143,20 @@ p {
 .social {
   -webkit-transition: fill var(--slow-anim);
   transition: fill var(--slow-anim);
+}
+
+.logo {
+  margin-right: 93px;
+  color: var(--active-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.logo__header {
+  color: #000;
+}
+
+.logo-footer {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

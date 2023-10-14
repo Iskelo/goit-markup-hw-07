@@ -4,28 +4,6 @@
 	|=============================
 */
 
-.header {
-	border-bottom: 1px solid var(--border-color);
-	letter-spacing: 0.02em;
-}
-
-.header-container {
-	display: flex;
-	align-items: center;
-}
-
-.logo {
-	margin-right: 93px;
-	color: var(--active-color);
-	font-family: Raleway;
-	font-weight: 700;
-	font-size: 26px;
-}
-
-.logo__header {
-	color: #000;
-}
-
 .navigation__list {
 	display: flex;
 	margin: 0;
@@ -592,9 +570,6 @@ input[name^="user"]:hover~.modal-form__icon, input[name^="user"]:focus~.form-ico
 	margin-bottom: 28px;
 }
 
-.logo-footer {
-	color: #fff;
-}
 
 address {
 	margin-top: 20px;
