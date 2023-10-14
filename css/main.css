@@ -121,12 +121,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .navigation__item {
   margin-right: 50px;
 }
 .navigation__item:last-child {
   margin-right: 0;
 }
+
 .navigation__link {
   display: block;
   padding-top: 32px;
@@ -140,6 +142,7 @@ p {
 .navigation__link:hover, .navigation__link:focus {
   color: var(--active-color);
 }
+
 .navigation__link--active {
   position: relative;
   color: var(--active-color);
@@ -162,18 +165,21 @@ p {
   display: flex;
   margin-left: auto;
 }
+
 .header__phone {
   margin-right: 40px;
 }
 .header__phone:last-child {
   margin-right: 0;
 }
+
 .header__email {
   margin-right: 40px;
 }
 .header__email:last-child {
   margin-right: 0;
 }
+
 .header__email--link {
   -webkit-transition: color var(--slow-anim);
   transition: color var(--slow-anim);
@@ -191,6 +197,7 @@ p {
   color: var(--active-color);
   fill: var(--active-color);
 }
+
 .header__phone--link {
   -webkit-transition: color var(--slow-anim);
   transition: color var(--slow-anim);
@@ -300,12 +307,14 @@ p {
 .address__text {
   margin-bottom: 12px;
 }
+
 .address__list--item {
   margin-bottom: 12px;
 }
 .address__list--item:last-child {
   margin-bottom: 0;
 }
+
 .address__list--link {
   opacity: 0.6;
   color: #fff;
@@ -336,6 +345,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .footer__social--link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,6 +383,7 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
 .footer__form--label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,6 +400,10 @@ p {
   border: 1px solid var(--active-color);
   outline: transparent;
 }
+.footer__form--label--icon {
+  fill: #fff;
+}
+
 .footer__form--label--email {
   outline: transparent;
   width: 358px;
@@ -409,6 +424,7 @@ p {
   border: 1px solid var(--active-color);
   outline: transparent;
 }
+
 .footer__form--label--btn {
   height: auto;
   background-color: var(--active-color);
@@ -432,7 +448,4 @@ p {
 }
 .footer__form--label--btn:hover {
   background-color: var(--active-btn);
-}
-.footer__form--label--icon {
-  fill: #fff;
 }/*# sourceMappingURL=main.css.map */
