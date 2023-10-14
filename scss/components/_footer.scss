@@ -102,18 +102,11 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-
-	&:hover .footer__form--label--email{
-		border: 1px solid var(--active-color);
-		outline: transparent;
-	}
 	
 	&--icon {
 		fill: #fff;
 	}
 }
-
-
 
 .footer__form--label--email{
 	outline: transparent;
@@ -130,6 +123,11 @@
 	transition: border var(--slow-anim);
 
 	&:focus{
+		border: 1px solid var(--active-color);
+		outline: transparent;
+	}
+
+	.footer__form--label:hover &{
 		border: 1px solid var(--active-color);
 		outline: transparent;
 	}
